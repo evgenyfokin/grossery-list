@@ -1,46 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive;
 }
 
 body {
-    font-family: 'Mumblers Demo';
-    background-color: cornflowerblue;
+    background-color: rgb(255, 157, 0);
 }
 
 .container {
-    border: 1px solid black;
-
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
 }
 
-.groceries {
-    border: 1px solid balck;
-
-    width: 600px;
-    min-height: 100vh;
-    margin: auto;
+.grocery {
     background-color: #fff;
-    box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.5);
+    width: 600px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 3% 7%;
+    min-height: 100vh;
+    box-shadow: 14px 2px 20px 0px rgb(0 0 0 / 25%);
 }
 
-.groceries h1 {
-    font-size: 2.5 rem;
-    margin-top: 1rem;
+.grocery h1 {
+    font-size: 4rem;
+    text-align: center;
 }
 
-.groceries i {
-    font-size: 2rem;
-    color: cornflowerblue;
+.grocery-input {
+    text-align: center;
 }
 
-.groceries input {
+.fa-pen {
+    color: rgb(255, 157, 0);
+    font-size: 30px;
+}
+
+.input {
     border: none;
-    border-bottom: 3px solid #000;
-    font-family: inherit;
     outline: none;
+    border-bottom: 3px solid #000;
     width: 70%;
     font-size: 1.5rem;
 }
@@ -48,6 +52,22 @@ body {
 #allItems h2 {
     margin-left: 50px;
     margin-right: 10px;
-    margin-top: 135px;
+    margin-top: 15px;
     font-size: 2rem;
+}
+
+@media (max-width: 480px) {
+    .grocery h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .input {
+        font-size: 1rem;
+    }
+
+    .fa-pen {
+        color: rgb(255, 157, 0);
+        font-size: 20px;
+    }
 }
